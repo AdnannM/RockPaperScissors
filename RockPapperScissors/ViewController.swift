@@ -10,6 +10,11 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var label: UILabel!
+    @IBOutlet weak var playButton: UIButton! {
+        didSet {
+            playButton.layer.cornerRadius = 20
+        }
+    }
     
     var myHand = ""
     let hand = ["👊", "✋", "✌️"]
